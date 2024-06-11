@@ -2,6 +2,7 @@ resource "aws_glue_connection" "vpc_connection" {
   name = "Glue_vpc_connection"
   description = "Glue_Access_to_VPC"
   connection_type = "NETWORK"
+  connection_properties = {}
 
   physical_connection_requirements {
     availability_zone = var.availability_zone[0]
