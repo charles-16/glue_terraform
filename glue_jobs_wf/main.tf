@@ -4,13 +4,16 @@ resource "aws_glue_job" "Glue_buck_st" {
   glue_version = "4.0"
 
   command {
-    script_location = "/scripts/s3_src_tgt_script.py"
+    script_location = "/scripts/tranfromation.py"
     python_version  = "3"
   }
 
   default_arguments = {
     "--TempDir" = "s3://my-temp-bucket/temp-dir/"
   }
+
+  worker_type = "Standard"
+  number_of_workers = 2
 }
 
 /*
