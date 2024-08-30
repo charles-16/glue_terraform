@@ -5,7 +5,7 @@ import io
 s3 = boto3.client('s3')
 
 # Download the file from S3
-bucket_name = 's3://glue-cj-src11-s3/'
+bucket_name = 'glue-cj-src11-s3/'
 input_file_key = 'raw/data.csv'
 output_file_key = 'transformed/data.csv'
 
