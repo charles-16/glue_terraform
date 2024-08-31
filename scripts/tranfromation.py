@@ -28,3 +28,10 @@ df.to_csv(output_buffer, index=False)
 
 # Upload the transformed file back to S3
 s3.put_object(Bucket=bucket_name, Key=output_file_key, Body=output_buffer.getvalue())
+
+if __name__ == "__main__":
+    input_bucket = 'glue-cj-src11-s3'
+    input_key = 'raw/data.csv'
+    output_bucket = 'glue-cj-tgt11-s3'
+    output_key = 'transformed/data.csv'
+    transform_data(input_bucket, input_key, output_bucket, output_key)
