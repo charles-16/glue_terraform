@@ -1,5 +1,5 @@
 resource "aws_glue_job" "Glue_buck_st" {
-  name     = "glue_buck_st"
+  name     = "glue_buck_st1"
   role_arn = var.glue_role_arn
   glue_version = "4.0"
 
