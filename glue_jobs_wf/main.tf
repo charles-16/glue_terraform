@@ -4,7 +4,7 @@ resource "aws_glue_job" "Glue_buck_st" {
   glue_version = "4.0"
 
   command {
-    script_location = "/scripts/tranfromation.py"
+    script_location = "s3://glue-cj-src11-s3/scripts/tranfromation.py"
     python_version  = "3"
   }
 
