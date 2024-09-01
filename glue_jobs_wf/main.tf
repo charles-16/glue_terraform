@@ -9,7 +9,7 @@ resource "aws_glue_job" "Glue_buck_st" {
   }
 
   default_arguments = {
-    "--TempDir" = "s3://my-temp-bucket/temp-dir/"
+    "--TempDir" = "s3://my-temp-bucket-cj16/temp-dir/"
   }
 
   worker_type = "Standard"
