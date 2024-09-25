@@ -5,10 +5,10 @@ variable "availability_zone" {
 
 variable "security_group" {
   type = list(string)
-  default = [ "sg-91bfcabf" ]
+  default = [ "sg-08f60b3f8fd907895" ]
 }
 
 variable "subnet_id" {
   type = list(string)
-  default = [ "subnet-c63fc8a0", "subnet-ffdb5db2" ]
+  default = [ "subnet-006a66a3d1b284fc4", "subnet-0f94c69462a18b53e" ]
 }
