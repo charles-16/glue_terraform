@@ -4,12 +4,12 @@ resource "aws_glue_job" "Glue_buck_st" {
   glue_version = "4.0"
 
   command {
-    script_location = "s3://glue-cj-src11-s3/scripts/tranfromation.py"
+    script_location = "s3://glue-cj-src13-s3/scripts/tranfromation.py"
     python_version  = "3"
   }
 
   default_arguments = {
-    "--TempDir" = "s3://my-temp-bucket-cj16/temp-dir/"
+    "--TempDir" = "s3://my-temp-bucket-cj17/temp-dir/"
   }
 
   worker_type = "Standard"
